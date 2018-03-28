@@ -158,7 +158,7 @@ header {
     text-align: center;
 }
 
-/*currently viewed nav bar link*/
+/*currently viewed nav bar link highlighted*/
 .top-nav ul li a.current-page {
     color: #F54320;
     font-weight: bold;
@@ -190,18 +190,17 @@ header {
     top: 1px;
 }
 
-/*implement menu toogle*/
+/*Menu drop down for mobile*/
 
 .top-nav.toggle-open ul {
     display: block;
 }
 
 
-/*-----LOGO-----*/
+/*Logo*/
 
 .logo {
     background-color: #211D24;
-    /*CHANGE*/
     margin: 0;
     text-align: center;
     padding: .25em .75em;
@@ -212,7 +211,7 @@ header {
 }
 
 
-/*-----FOOTER-----*/
+/*Footer*/
 
 footer {
     
@@ -225,21 +224,7 @@ footer p {
     padding-bottom: .75em;
 }
 
-
-/*social media icons*/
-
-
-/*.fa {
-    font-size: 1em;
-    padding: .5em .25em 0;
-    text-align: justify;
-    text-decoration: none;
-    border-radius: 50%;
-    color: #DDDDDA;
-}
-.fa:hover, .fa:focus{
-	color: #E3AD02;
-}*/
+/*Footer Social Media Icons*/
 
 .icon {
     padding: .5em .25em 0;
@@ -270,7 +255,7 @@ footer p {
 
 
 
-/*Name, Major, School*/
+/*Name, Major, School Card*/
 #name,
 p {
     margin: 0;
@@ -289,44 +274,64 @@ p {
 
 #school {
     font-family: "Quicksand", sans-serif;
-    font-size: 0.75em;
+    font-size: 1.1em;
     font-weight: bolder;
    
 }
 
 #major {
     font-family: "Quicksand", sans-serif;
-    font-size: 0.75em;
+    font-size: 0.9em;
     font-weight: lighter;
     padding: 0;
 }
 
+#minor {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding: 0;
+}
+
+
 #job {
     font-family: "Rajdhani", sans-serif;
-    font-size: 0.75em;
-    font-weight: lighter;
-    padding: 1.5em;
+    font-size: 1.25em;
+    padding: 0.55em;
 }
 
 
 /*-----ABOUT PAGE-----*/
+.body-about {
+    background: url("../img/northern-lights.jpg");
+   
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
 
-.resp-image {
-    /*also photo gallery*/
+/*.resp-image {
+    
     max-width: 100%;
 }
 
 .img-container img {
-    width: 80%;
+    width: 250px;
+    height: 250px;
     margin: 5% 10%;
     display: block;
     box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
-}
+}*/
 
 .text-container {
+
     width: 98%;
     margin-top: 0;
     margin-bottom: 3%;
+}
+
+.text-container p {
+    color: white;
 }
 
 .text-container h2 {
