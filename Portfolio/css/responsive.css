@@ -1,6 +1,19 @@
-
-/*-----TABLETS-----*/
-
+/*Mobile*/
+@media only screen and (min-width: 450px) {
+    /*photo gallery*/
+    .photo-grid {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .photo-cell {
+        width: 47.5%;
+    }
+    .landscape {
+        width: 98%
+    }
+}
+/*Tablet*/
 @media only screen and (min-width: 650px) {
     .main-content {
         margin-top: 150px;
@@ -59,7 +72,7 @@
         margin: 5% 20%;
     }
 }
-/*-----DESKTOPS-----*/
+/*Desktop*/
 @media only screen and (min-width: 1100px) {
 
     .main-content {
@@ -86,21 +99,3 @@
     }
 }
 
-/*Mobile*/
-@media only screen and (min-width: 450px) {
-    /*photo gallery*/
-    .photo-grid {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-    .photo-cell {
-        width: 47.5%;
-    }
-    .landscape {
-        width: 98%
-    }
-}
-
-
-}

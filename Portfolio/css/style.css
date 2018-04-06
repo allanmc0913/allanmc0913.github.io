@@ -7,6 +7,7 @@ html {
 html,
 body {
     height: 100%;
+    overflow: auto;
 }
 
 
@@ -43,6 +44,7 @@ footer {
     font-family: 'Rajdhani', sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 header,
@@ -109,7 +111,7 @@ h6 {
 }
 
 
-/*-----HEADER & NAVIGATION-----*/
+/*Header and Nav*/
 
 header {
     font-family: 'Rajdhani', sans-serif;
@@ -126,7 +128,6 @@ header {
     list-style-type: none;
     padding: 0;
     background-color: #211D24;
-    /*CHANGE*/
     margin: 0;
     display: none;
 }
@@ -134,14 +135,12 @@ header {
 .top-nav ul li,
 .menu-icon {
     border-top: 1px solid #ECECEA;
-    /*CHANGE*/
+
 }
 
 .top-nav ul li a {
     font-size: 1em;
     color: #DDDDDA;
-
-    /*CHANGE*/
     text-decoration: none;
     padding: .5em 1em;
     display: block;
@@ -151,7 +150,6 @@ header {
 .menu-icon a {
     font-size: 1em;
     color: #DDDDDA;
-    /*CHANGE*/
     text-decoration: none;
     padding: .5em 1em;
     display: block;
@@ -231,8 +229,12 @@ footer p {
     height: 25px;
 }
 
+.icon:hover {
+    opacity: 0.5;
+}
 
-/*-----HOMEPAGE-----*/
+
+/*Home Page*/
 
 .body-home {
     background: url("../img/parana.jpg");
@@ -301,93 +303,98 @@ p {
 }
 
 
-/*-----ABOUT PAGE-----*/
+/*About Page*/
+
 .body-about {
     background: url("../img/northern-lights.jpg");
-   
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
 }
 
-/*.resp-image {
-    
-    max-width: 100%;
-}
-
-.img-container img {
-    width: 250px;
-    height: 250px;
-    margin: 5% 10%;
-    display: block;
-    box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
-}*/
 
 .text-container {
 
     width: 98%;
     margin-top: 0;
     margin-bottom: 3%;
+
+}
+
+#main-content {
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+
 }
 
 .text-container p {
+    font-family: "Raleway", sans-serif;
     color: white;
 }
 
+.text-container h1 {
+    color: white;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    color: #ccc6c6;
+    font-size: 45px;
+    
+}
 .text-container h2 {
-    max-width: 500px;
+    color: white;
+    text-align: center;
+    font-size: 2em;
 }
 
-.text-container h2 span.blue {
-    color: #17BEBB;
-}
-
-.text-container h2 span.red {
-    color: #F54320;
-}
-
-.text-container h2 span.yellow {
-    color: #E3AD02;
+.text-container #quote {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 2.0em;
 }
 
 
-/*-----WORK PAGE-----*/
+/*Work Page*/
+.body-work {
+    background-image: url("../img/blackbg.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 
-.work-done,
-.work-todo {
-    color: #DDDDDA;
-    padding: .25em 1.5em 1.5em;
-    box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
+}
+.resume {
+    text-align: center;
+}
+.work-about {
+    color: white;
+    text-align: center;
 }
 
-.work-done {
-    background-color: #E3AD02;
-    margin-top: 1em;
+.work-about h1 {
+    font-family: 'Roboto Mono', monospace;
 }
 
-.work-todo {
-    background-color: #17BEBB;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-}
+.work-about .text-container {
 
-.work-done h3,
-.work-todo h3 {
-    padding-bottom: 0;
-    margin-bottom: .25em;
+    width: 98%;
+    margin-top: 0;
+    margin-bottom: 3%;
+
 }
 
 
-/*-----CRAFTS PAGE ------*/
+/*-----Photos PAGE ------*/
 
-.main-content-crafts {
+.main-content-life {
     margin-top: 125px;
 }
 
+.life h1 {
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
 
-/*photo gallery*/
-
-.crafts {
+.life {
     display: block;
     margin: auto;
     max-width: 1200px;
@@ -398,11 +405,33 @@ p {
     margin-left: 2%;
 }
 
+.overlay {
+  position: relative;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #211D24;
+}
+
+.photo-cell:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 .photo-cell img {
     width: 98%;
     display: block;
     box-shadow: 0px 0px 10px rgba(141, 141, 139, .75);
 }
-
-
-/*-----CONTACT PAGE-----*/
