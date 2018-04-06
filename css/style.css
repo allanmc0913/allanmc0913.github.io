@@ -12,7 +12,6 @@ body {
 
 
 /*skip content*/
-
 .skip {
     position: absolute;
     left: -999px;
@@ -381,7 +380,7 @@ p {
 }
 
 
-/*-----Photos PAGE ------*/
+/*Life Page*/
 
 .main-content-life {
     margin-top: 125px;
@@ -412,10 +411,10 @@ p {
   background-color: #211D24;
 }
 
+/*Flash photo caption*/
 .photo-cell:hover .overlay {
   opacity: 1;
 }
-
 
 .text {
   color: white;
