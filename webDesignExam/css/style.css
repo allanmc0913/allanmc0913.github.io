@@ -9,3 +9,8 @@
 	border: 5px solid blue;
 	padding: 5%;
 }
+
+body {
+    background: url("../images/sun-pattern.png");
+    
+}
