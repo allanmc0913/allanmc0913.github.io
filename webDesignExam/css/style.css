@@ -1,0 +1,11 @@
+.row {
+
+  display: flex;
+}
+
+.block {
+	flex: 1 1 100%;
+	text-align: center;
+	border: 5px solid blue;
+	padding: 5%;
+}
