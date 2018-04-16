@@ -1,5 +1,6 @@
-.row {
+/*https://stackoverflow.com/questions/17069972/css-make-inline-block-elements-span-the-whole-width-of-container*/
 
+.row {
   display: flex;
 }
 
